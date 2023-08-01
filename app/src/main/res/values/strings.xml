@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">InfoBencana</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="lihat_bencana">Lihat Bencana</string>
+    <string name="cari_info_bencana">Cari Info Bencana</string>
 </resources>

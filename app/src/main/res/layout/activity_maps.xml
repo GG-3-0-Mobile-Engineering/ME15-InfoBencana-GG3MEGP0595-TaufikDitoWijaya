@@ -10,16 +10,44 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.MapsActivity" />
+        tools:context=".ui.MapsActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/search_bencana"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/search_bg"
+        android:hint="@string/cari_info_bencana"
+        android:paddingStart="16dp"
+        android:maxLines="1"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_setting"
+        android:layout_marginLeft="8dp"
+        map:layout_constraintBottom_toBottomOf="@+id/search_bencana"
+        map:layout_constraintStart_toEndOf="@+id/search_bencana"
+        map:layout_constraintTop_toTopOf="@+id/search_bencana" />
 
     <Button
         android:id="@+id/button_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lihat Bencana"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/lihat_bencana"
         map:layout_constraintBottom_toBottomOf="parent"
-        map:layout_constraintStart_toStartOf="parent"
-        />
+        map:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
